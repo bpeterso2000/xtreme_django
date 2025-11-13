@@ -66,7 +66,7 @@
     <main class="grid grid-cols-[180px_1fr_220px] gap-4 mt-4">
         
         <!-- 1. Left Sidebar "From Model" -->
-        <div class="mockup-border p-2 bg-gray-50">
+        <div class="mockup-border pl-2 pt-2 pb-2 bg-gray-50">
             <div class="badge badge-ghost p-2">From Model</div>
             <ul class="menu p-1 text-base">
                 <li><a class="link link-primary p-1">User</a></li>
@@ -79,25 +79,26 @@
         <div class="grid grid-rows-2 gap-4">
             <!-- Form Input Block 1 -->
             <div>
-                <div class="mockup-border grid grid-cols-[1fr_auto] bg-[#FFFBEB]">
+                <div class="mockup-border grid grid-cols-[1fr_auto] bg-slate-50">
                     <!-- Main Input Config -->
                     <div class="p-3 flex flex-col gap-3">
                          <div class="flex justify-between items-center">
                             <label class="font-semibold">Email (label)</label>
                             <label class="cursor-pointer label p-0">
-                                <span class="label-text text-red-600 font-bold mr-2">Required !</span> 
+                                <span class="label-text text-red-600 mr-2">Required ! </span> 
                                 <input type="checkbox" class="checkbox" />
                             </label>
                         </div>
                         <div class="flex items-center gap-2">
-                             <div class="font-bold text-xl text-blue-600 tooltip" data-tip="Input Type"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
                              <input type="text" placeholder="(Placeholder; type: URL)" class="input input-sm input-bordered w-full" />
                         </div>
-                        <input type="text" placeholder="Help text (optional)" class="input input-sm input-bordered bg-[#FCEBCA] placeholder:text-gray-600 w-full" />
-                         <div class="flex items-center justify-between">
+                        <input type="text" placeholder="Help text (optional)" class="input input-sm input-bordered placeholder:text-gray-600 w-full" />
+                         <div class="grid grid-cols-4 gap-2 items-center">
                             <button class="btn btn-xs btn-outline btn-error">Error Messages (custom)</button>
-                             <select class="select select-bordered select-xs">
-                                <option selected>Input Mode: None</option>
+                            <button class="badge badge-ghost text-xs">Name/ID: email_input</button>
+                            <button class="badge badge-ghost text-xs">Default: user@example.com</button>
+                            <select class="select select-bordered select-xs">
+                                <option selected>Type: Email</option>
                                 <option>text</option>
                                 <option>numeric</option>
                              </select>
@@ -105,14 +106,14 @@
                     </div>
                     <!-- Utility Buttons -->
                     <div class="border-l-2 border-black p-2 flex flex-col justify-between items-center text-center text-sm">
-                        <div class="badge badge-ghost">Tab Index: 1</div>
+                        <div class="badge badge-ghost text-xs">Tab Index: 1</div>
                         <div class="grid grid-cols-2 gap-x-4 gap-y-2">
                             <a href="#" class="hover:text-primary"><i class="fa-solid fa-circle-question text-lg"></i><div>Tool tip</div></a>
                             <a href="#" class="text-red-600 hover:text-red-800"><i class="fa-solid fa-xmark text-lg"></i><div>Delete</div></a>
                             <a href="#" class="text-green-600 hover:text-green-800"><i class="fa-solid fa-square-check text-lg"></i><div>Validation</div></a>
                             <a href="#" class="hover:text-primary"><i class="fa-solid fa-pen-to-square text-lg"></i><div>Choices</div></a>
                         </div>
-                        <div class="badge badge-ghost">Access Key: None</div>
+                        <div class="badge badge-ghost text-xs">Access Key: None</div>
                     </div>
                 </div>
             </div>
@@ -132,12 +133,20 @@
                         <div class="flex items-center gap-2">
                              <div class="font-bold text-xl text-blue-600 tooltip" data-tip="Input Type"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
                              <input type="text" placeholder="(Placeholder; type: URL)" class="input input-sm input-bordered w-full" />
+                             <a href="#" class="hover:text-primary"><i class="fa-solid fa-circle-question"></i></a>
+                             <a href="#" class="text-green-600 hover:text-green-800"><i class="fa-solid fa-square-check"></i></a>
                         </div>
-                       <input type="text" placeholder="Help text (optional)" class="input input-sm input-bordered bg-[#FCEBCA] placeholder:text-gray-600 w-full" />
-                         <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <input type="text" placeholder="Help text (optional)" class="input input-sm input-bordered bg-[#FCEBCA] placeholder:text-gray-600 w-full" />
+                            <span class="label-text text-blue-600 flex items-center gap-1"><i class="fa-solid fa-eye"></i></span>
+                            <span class="label-text text-red-600 flex items-center gap-1"><i class="fa-solid fa-eye-slash"></i></span>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 items-center">
                             <button class="btn btn-xs btn-outline btn-error">Error Messages (custom)</button>
-                             <select class="select select-bordered select-xs">
-                                <option selected>Input Mode: None</option>
+                            <button class="badge badge-ghost text-xs">Name/ID: email_input</button>
+                            <button class="badge badge-ghost text-xs">Default: user@example.com</button>
+                            <select class="select select-bordered select-xs">
+                                <option selected>Type: Email</option>
                              </select>
                         </div>
                     </div>
@@ -157,9 +166,9 @@
         </div>
 
         <!-- 3. Right Sidebar "options" -->
-        <div class="grid grid-rows-2 gap-4 bg-gray-50">
+        <div class="grid grid-rows-2 gap-4 bg-slate-50">
             <!-- Options Block 1 -->
-            <div class="mockup-border p-2">
+            <div class="mockup-border pl-2 pt-2 pb-2">
                 <div class="form-control">
                     <label class="label cursor-pointer justify-start gap-2">
                         <input type="checkbox" class="checkbox checkbox-sm" />
@@ -180,7 +189,7 @@
                 </div>
             </div>
             <!-- Options Block 2 -->
-            <div class="mockup-border p-2">
+            <div class="mockup-border pl-2 pt-2 pb-2">
                 <div class="form-control">
                     <label class="label cursor-pointer justify-start gap-2">
                         <input type="checkbox" class="checkbox checkbox-sm" />
